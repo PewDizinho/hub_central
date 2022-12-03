@@ -16,7 +16,7 @@ int lastIndex = 1;
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold(//
         backgroundColor: Preferences().getBackgroundColor(),
         bottomNavigationBar: Handler().getNavBar(null, null, null, context),
         body: Center(
