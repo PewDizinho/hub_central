@@ -16,7 +16,8 @@ class Handler {
     );
   }
 
-  getNavBar(List? button1, List? button2, List? button3, BuildContext context) {
+  CurvedNavigationBar getNavBar(
+      List? button1, List? button2, List? button3, BuildContext context) {
     int lastIndex = 1;
     return CurvedNavigationBar(
       index: lastIndex,

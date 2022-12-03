@@ -1,16 +1,3 @@
-# hub_central
+# hub Central
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Hello! That's a little project I'v been working on, my principal idea here is to _learn_ how to code in flutter/dart, this code must have some weird or shitty code, keep in mind that the idea is to _learn_ and _study_ the language, so, yeah, dont judge me
