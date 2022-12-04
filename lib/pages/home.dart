@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hub_central/config/handler.dart';
 import 'package:hub_central/pages/categories.dart';
+import 'package:hub_central/pages/create_anotation.dart';
 import 'package:sizer/sizer.dart';
 import '../config/preferences.dart';
 
@@ -75,7 +76,12 @@ class _HomeState extends State<Home> {
               child: IconButton(
                 icon: const Icon(Icons.add),
                 iconSize: 30.sp,
-                onPressed: () {},
+                onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const CreateAnotation(),
+                  ),
+                ),
               ),
             ),
             const Spacer(

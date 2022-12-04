@@ -62,17 +62,18 @@ class _CategoriesState extends State<Categories> {
             ),
             Center(
               child: _getButton(
-                  context,
-                  Icons.home,
-                  "Home",
-                  () => {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const Home(),
-                          ),
-                        )
-                      }),
+                context,
+                Icons.home,
+                "Home",
+                () => {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const Home(),
+                    ),
+                  )
+                },
+              ),
             ),
           ],
         ),

@@ -83,7 +83,7 @@ class Handler {
 
   getMargin(int? size) {
     return SizedBox(
-      height: (size != null ? size.h : 3.h),
+      height: (size != null ? size.h : 5.h),
     );
   }
 
