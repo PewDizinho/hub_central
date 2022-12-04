@@ -1,4 +1,4 @@
-# hub Central
+# Hub Central
 
 Olá! Esse é um pequeno projeto mobile com fins de estudo que estou trabalhando! 
 
