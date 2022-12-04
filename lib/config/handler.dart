@@ -1,7 +1,6 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
-
 import '../pages/home.dart';
 
 class Handler {
@@ -44,7 +43,6 @@ class Handler {
                   ),
                   ModalRoute.withName('/'));
             }
-
             break;
           case 1:
             if (button2 != null) {
