@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hub_central/config/handler.dart';
+import 'package:hub_central/pages/categories.dart';
 import 'package:sizer/sizer.dart';
 import '../config/preferences.dart';
 
@@ -17,12 +18,24 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Preferences().getBackgroundColor(),
-      bottomNavigationBar: Handler().getNavBar(null, null, null, context),
+      bottomNavigationBar: Handler().getNavBar(
+          null,
+          [
+            null,
+            () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Categories(),
+                  ),
+                )
+          ],
+          null,
+          context),
       body: Center(
         child: Column(
           children: [
             Handler().getMargin(null),
-            Handler().createText("Bem-Vindo Paulo!", 50, null, null),
+            Handler().createText("Bem-Vindo Paulo!", 30, null, null),
             Row(
               children: [
                 SizedBox(
@@ -61,7 +74,7 @@ class _HomeState extends State<Home> {
               backgroundColor: Colors.white,
               child: IconButton(
                 icon: const Icon(Icons.add),
-                iconSize: 55.sp,
+                iconSize: 30.sp,
                 onPressed: () {},
               ),
             ),

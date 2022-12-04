@@ -22,9 +22,15 @@ class Handler {
       index: lastIndex,
       backgroundColor: Colors.transparent,
       items: <Widget>[
-        Icon((button1 != null ? button1[0] : Icons.home), size: 40),
-        Icon((button2 != null ? button2[0] : Icons.apps), size: 40),
-        Icon((button3 != null ? button3[0] : Icons.notifications), size: 40),
+        Icon((button1 != null ? (button1[0] ?? Icons.home) : Icons.home),
+            size: 40),
+        Icon((button2 != null ? (button2[0] ?? Icons.apps) : Icons.apps),
+            size: 40),
+        Icon(
+            (button3 != null
+                ? (button3[0] ?? Icons.notifications)
+                : Icons.notifications),
+            size: 40),
       ],
       onTap: (index) {
         if (lastIndex != index) {
